@@ -1,0 +1,167 @@
+(HTML):
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Hibyut.</a>
+        <p>coding</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="wp6627177.jpg" alt="error" height="200" width="200">
+        <p><b>I am a passionate CS student. And i am currently pursuing a btech degree.</b></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1 : Calculator</h3>
+            <img src="wp6627177.jpg" alt="Project 1">
+            <p>An interactive calculator.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2 : Landing Page</h3>
+            <img src="wp6627177.jpg" alt="Project 2">
+            <p>A responsive Landing Page.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="your-resume.pdf" download>Download</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sayedayanahmed95@gmail.com</p>
+        <p>Phone: +91-7309401090</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hibyut. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+(CSS):
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #081b29;
+    color: #ededed;
+}
+
+header {
+    background: yellowgreen;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#about h2,#about p{
+    text-align : left;
+    font-style : italic;
+}
+
+#skills h2, #projects h2, #resume h2, #contact h2 {
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.project {
+    background: #081b29;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+}
+
+.project img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: -moz-box;
+    margin: 0 auto;
+}
+
+
+#resume a {
+    display: block;
+    text-align: center;
+    border: 2px solid yellowgreen;
+    background: #081b29;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#resume a:hover {
+    background: yellowgreen;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: yellowgreen;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
